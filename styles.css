@@ -1,0 +1,31 @@
+body {
+    background: repeating-linear-gradient(to left, #293344, #009999);
+}
+
+.calc-grid {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    grid-template-columns: repeat(5, 125px);
+    grid-template-rows: minmax(125px, auto)repeat(4, 125px);
+}
+
+
+.calc-grid > button:hover { 
+    cursor: pointer;
+    background-color: aquamarine;
+   
+}
+
+.output {
+    grid-column: 1/-1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.output .current {
+    font-size: 50px;
+}
